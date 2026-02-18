@@ -2,13 +2,13 @@
 /**
  * Hook
  *
- * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2022 Pronamic
+ * @author    SolveBeam <info@pronamic.eu>
+ * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
- * @package   Pronamic\WordPress\Documentor
+ * @package   SolveBeam\WordPress\Documentor
  */
 
-namespace Pronamic\WordPress\Documentor;
+namespace SolveBeam\WordPress\Documentor;
 
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -45,7 +45,7 @@ class Hook {
 
 	/**
 	 * Arguments.
-	 * 
+	 *
 	 * @var Argument[]
 	 */
 	public $arguments;

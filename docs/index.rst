@@ -1,2 +1,2 @@
-Pronamic WordPress Documentor
+SolveBeam WordPress Hooks Documentor
 -----------------------------

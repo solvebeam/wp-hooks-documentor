@@ -3,13 +3,13 @@
  * Default Template
  *
  * @link      https://github.com/themeblvd/hookster
- * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2022 Pronamic
+ * @author    SolveBeam <info@pronamic.eu>
+ * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
- * @package   Pronamic\WordPress\Documentor
+ * @package   SolveBeam\WordPress\Documentor
  */
 
-namespace Pronamic\WordPress\Documentor;
+namespace SolveBeam\WordPress\Documentor;
 
 if ( ! isset( $documentor ) ) {
 	return;

@@ -1,13 +1,13 @@
 <p align="center">
 	<a href="https://github.com/pronamic/wp-documentor">
-		<img src="logos/pronamic-wp-documentor.svgo-min.svg" alt="Pronamic WordPress Documentor" width="128" height="128">
+		<img src="logos/pronamic-wp-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
 	</a>
 </p>
 
-<h1 align="center">Pronamic WordPress Documentor</h1>
+<h1 align="center">SolveBeam WordPress Hooks Documentor</h1>
 
 <p align="center">
-	Pronamic WordPress Documentor is a tool to automatically extract data about the <strong>actions</strong> and <strong>filters</strong> of your WordPress theme or plugin.	
+	SolveBeam WordPress Hooks Documentor is a tool to automatically extract data about the <strong>actions</strong> and <strong>filters</strong> of your WordPress theme or plugin.	
 </p>
 
 [![Latest Stable Version](https://poser.pugx.org/pronamic/wp-documentor/v)](//packagist.org/packages/pronamic/wp-documentor)
@@ -28,7 +28,7 @@
 
 ### Installation
 
-To start documenting your WordPress filters and actions, require Pronamic WordPress Documentor in Composer:
+To start documenting your WordPress filters and actions, require SolveBeam WordPress Hooks Documentor in Composer:
 
 ```
 composer require pronamic/wp-documentor --dev
@@ -36,7 +36,7 @@ composer require pronamic/wp-documentor --dev
 
 ### First Run
 
-To let Pronamic WordPress Documentor analyse your codebase, you have to use the `parse` command and point it to the right directory:
+To let SolveBeam WordPress Hooks Documentor analyse your codebase, you have to use the `parse` command and point it to the right directory:
 
 ```
 vendor/bin/wp-documentor parse src
@@ -170,4 +170,4 @@ Here is a list of alternatives that we found. However, none of these satisfied o
 - https://github.com/phpDocumentor/phpDocumentor/issues/2865
 - https://github.com/themeblvd/hookster
 
-[![Pronamic - Work with us](https://github.com/pronamic/brand-resources/blob/main/banners/pronamic-work-with-us-leaderboard-728x90%404x.png)](https://www.pronamic.eu/contact/)
+[![SolveBeam - Work with us](https://github.com/pronamic/brand-resources/blob/main/banners/pronamic-work-with-us-leaderboard-728x90%404x.png)](https://www.pronamic.eu/contact/)

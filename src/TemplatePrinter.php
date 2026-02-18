@@ -2,13 +2,13 @@
 /**
  * Template Printer
  *
- * @author    Pronamic <info@pronamic.eu>
- * @copyright 2005-2022 Pronamic
+ * @author    SolveBeam <info@pronamic.eu>
+ * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
- * @package   Pronamic\WordPress\Documentor
+ * @package   SolveBeam\WordPress\Documentor
  */
 
-namespace Pronamic\WordPress\Documentor;
+namespace SolveBeam\WordPress\Documentor;
 
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -23,21 +23,21 @@ use Symfony\Component\Console\Output\OutputInterface;
 class TemplatePrinter {
 	/**
 	 * Documentor.
-	 * 
+	 *
 	 * @var Documentor
 	 */
 	public $documentor;
 
 	/**
 	 * Output.
-	 * 
+	 *
 	 * @var OutputInterface
 	 */
 	public $output;
 
 	/**
 	 * Template file.
-	 * 
+	 *
 	 * @var string
 	 */
 	public $template;
