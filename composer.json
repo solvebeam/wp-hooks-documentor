@@ -39,27 +39,28 @@
 			"symfony/flex": false
 		},
 		"platform": {
-			"php": "8.1"
+			"php": "8.2"
 		},
 		"sort-packages": true
 	},
 	"require": {
-		"php": ">=8.1",
+		"php": ">=8.2",
 		"phpdocumentor/reflection": "^4.0",
-		"phpdocumentor/reflection-docblock": "^5.2",
+		"phpdocumentor/reflection-docblock": "^5.6",
 		"symfony/console": "^5.0 || ^6.0 || ^6.1 || ^6.2",
 		"symfony/filesystem": "^5.0 || ^6.0 || ^6.1 || ^6.2",
 		"symfony/finder": "^5.0 || ^6.0 || ^6.1 || ^6.2",
 		"symfony/polyfill-php80": "^1.24"
 	},
 	"require-dev": {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.2",
 		"phpcompatibility/php-compatibility": "^9.3",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
 		"phpdocumentor/phpdocumentor": "^3.0",
-		"roots/wordpress": "^5.7",
-		"squizlabs/php_codesniffer": "^3.6",
-		"wp-coding-standards/wpcs": "^2.3"
+		"rector/rector": "^2.3",
+		"roots/wordpress": "^5.9",
+		"squizlabs/php_codesniffer": "^3.13",
+		"wp-coding-standards/wpcs": "^3.3"
 	},
 	"scripts": {
 		"phpdoc": "vendor/bin/phpdoc --setting='guides.enabled=true'",
