@@ -169,5 +169,3 @@ Here is a list of alternatives that we found. However, none of these satisfied o
 - https://github.com/wp-pay/core/issues/45
 - https://github.com/phpDocumentor/phpDocumentor/issues/2865
 - https://github.com/themeblvd/hookster
-
-[![SolveBeam - Work with us](https://github.com/solvebeam/brand-resources/blob/main/banners/solvebeam-work-with-us-leaderboard-728x90%404x.png)](https://www.solvebeam.com/contact/)
