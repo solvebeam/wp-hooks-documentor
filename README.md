@@ -102,21 +102,21 @@ Example: `--prefix=my_theme --prefix=my_plugin`
 ### Examples
 
 ```
-vendor/bin/wp-documentor parse ./tests/source
+vendor/bin/wphd parse ./tests/source
 ```
 
 ```
-vendor/bin/wp-documentor parse ./tests/source --format=hookster --type=actions --output=tests/docs/hookster-actions.json
-vendor/bin/wp-documentor parse ./tests/source --format=hookster --type=filters --output=tests/docs/hookster-filters.json
+vendor/bin/wphd parse ./tests/source --format=hookster --type=actions --output=tests/docs/hookster-actions.json
+vendor/bin/wphd parse ./tests/source --format=hookster --type=filters --output=tests/docs/hookster-filters.json
 ```
 
 ```
-vendor/bin/wp-documentor parse ./tests/source --format=markdown --output=tests/docs/hooks.md
+vendor/bin/wphd parse ./tests/source --format=markdown --output=tests/docs/hooks.md
 ```
 
 ```
-vendor/bin/wp-documentor parse ./tests/source --format=phpdocumentor-rst --type=actions --output=tests/docs/phpdocumentor-actions.rst
-vendor/bin/wp-documentor parse ./tests/source --format=phpdocumentor-rst --type=filters --output=tests/docs/phpdocumentor-filters.rst
+vendor/bin/wphd parse ./tests/source --format=phpdocumentor-rst --type=actions --output=tests/docs/phpdocumentor-actions.rst
+vendor/bin/wphd parse ./tests/source --format=phpdocumentor-rst --type=filters --output=tests/docs/phpdocumentor-filters.rst
 ```
 
 ## Ouput Examples

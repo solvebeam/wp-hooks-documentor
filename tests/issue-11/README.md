@@ -3,5 +3,5 @@
 https://github.com/solvebeam/wp-hooks-documentor/issues/11
 
 ```
-bin/wp-documentor parse tests/issue-11 --format=markdown --output=tests/issue-11/hooks.md
+bin/wphd parse tests/issue-11 --format=markdown --output=tests/issue-11/hooks.md
 ```

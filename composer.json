@@ -44,7 +44,7 @@
 		"sort-packages": true
 	},
 	"require": {
-		"php": ">=8.0",
+		"php": ">=8.1",
 		"phpdocumentor/reflection": "^4.0",
 		"phpdocumentor/reflection-docblock": "^5.2",
 		"symfony/console": "^5.0 || ^6.0 || ^6.1 || ^6.2",
@@ -64,20 +64,20 @@
 	"scripts": {
 		"phpdoc": "vendor/bin/phpdoc --setting='guides.enabled=true'",
 		"test": [
-			"bin/wp-documentor parse tests/source --format=hookster --type=actions --relative=tests/docs --output=tests/docs/hookster-actions.json",
-			"bin/wp-documentor parse tests/source --format=hookster --type=filters --relative=tests/docs --output=tests/docs/hookster-filters.json",
-			"bin/wp-documentor parse tests/source --format=markdown --relative=tests/docs --output=tests/docs/hooks.md",
-			"bin/wp-documentor parse tests/source --format=phpdocumentor-rst --type=actions --relative=tests/docs --output=tests/docs/phpdocumentor-actions.rst",
-			"bin/wp-documentor parse tests/source --format=phpdocumentor-rst --type=filters --relative=tests/docs --output=tests/docs/phpdocumentor-filters.rst",
-			"bin/wp-documentor parse wordpress --format=markdown --relative=tests/docs --memory-limit=-1 --output=tests/docs/wordpress-hooks.md",
-			"bin/wp-documentor parse tests/issue-10 --format=markdown --output=tests/issue-10/hooks.md --prefix=prefix_1 --prefix=prefix_2",
-			"bin/wp-documentor parse tests/issue-11 --format=markdown --output=tests/issue-11/hooks.md",
-			"bin/wp-documentor parse tests/issue-12 --format=markdown --output=tests/issue-12/hooks.md",
-			"bin/wp-documentor parse tests/issue-13 --exclude=file-exclude.php --exclude=folder-exclude/ --format=markdown --output=tests/issue-13/hooks.md",
-			"bin/wp-documentor parse tests/issue-14 --format=markdown --output=tests/issue-14/hooks.md",
-			"bin/wp-documentor parse tests/issue-16 --format=markdown --output=tests/issue-16/hooks.md",
-			"bin/wp-documentor parse tests/issue-17 --format=markdown --output=tests/issue-17/hooks.md",
-			"bin/wp-documentor parse tests/issue-18 --format=markdown --output=tests/issue-18/hooks.md"
+			"bin/wphd parse tests/source --format=hookster --type=actions --relative=tests/docs --output=tests/docs/hookster-actions.json",
+			"bin/wphd parse tests/source --format=hookster --type=filters --relative=tests/docs --output=tests/docs/hookster-filters.json",
+			"bin/wphd parse tests/source --format=markdown --relative=tests/docs --output=tests/docs/hooks.md",
+			"bin/wphd parse tests/source --format=phpdocumentor-rst --type=actions --relative=tests/docs --output=tests/docs/phpdocumentor-actions.rst",
+			"bin/wphd parse tests/source --format=phpdocumentor-rst --type=filters --relative=tests/docs --output=tests/docs/phpdocumentor-filters.rst",
+			"bin/wphd parse wordpress --format=markdown --relative=tests/docs --memory-limit=-1 --output=tests/docs/wordpress-hooks.md",
+			"bin/wphd parse tests/issue-10 --format=markdown --output=tests/issue-10/hooks.md --prefix=prefix_1 --prefix=prefix_2",
+			"bin/wphd parse tests/issue-11 --format=markdown --output=tests/issue-11/hooks.md",
+			"bin/wphd parse tests/issue-12 --format=markdown --output=tests/issue-12/hooks.md",
+			"bin/wphd parse tests/issue-13 --exclude=file-exclude.php --exclude=folder-exclude/ --format=markdown --output=tests/issue-13/hooks.md",
+			"bin/wphd parse tests/issue-14 --format=markdown --output=tests/issue-14/hooks.md",
+			"bin/wphd parse tests/issue-16 --format=markdown --output=tests/issue-16/hooks.md",
+			"bin/wphd parse tests/issue-17 --format=markdown --output=tests/issue-17/hooks.md",
+			"bin/wphd parse tests/issue-18 --format=markdown --output=tests/issue-18/hooks.md"
 		]
 	}
 }

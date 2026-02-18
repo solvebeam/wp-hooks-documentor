@@ -16,7 +16,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 +----------+------+-------------+
 | Argument | Type | Description |
 +==========+======+=============+
-| $mce_translation | array | Key/value pairs of strings. |
+| 
+Deprecated: Non-canonical cast (double) is deprecated, use the (float) cast instead in /Users/remco/Projects/wp-hooks-documentor/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 226
+$mce_translation | array | Key/value pairs of strings. |
 | $mce_locale | string | Locale. |
 +----------+------+-------------+
 
