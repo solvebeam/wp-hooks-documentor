@@ -1,5 +1,5 @@
 {
-	"name": "pronamic/wp-documentor",
+	"name": "solvebeam/wp-hooks-documentor",
 	"description": "Documentation Generator for WordPress.",
 	"keywords": [
 		"documentation",
@@ -13,8 +13,8 @@
 	"authors": [
 		{
 			"name": "SolveBeam",
-			"email": "info@pronamic.eu",
-			"homepage": "https://www.pronamic.eu/",
+			"email": "info@solvebeam.com",
+			"homepage": "https://www.solvebeam.com/",
 			"role": "Company"
 		},
 		{

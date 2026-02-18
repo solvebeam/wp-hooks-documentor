@@ -4,7 +4,7 @@
  *
  * @link      https://docs.phpdoc.org/3.0/guide/internals/guides.html
  * @link      https://docutils.sourceforge.io/docs/user/rst/quickref.html
- * @author    SolveBeam <info@pronamic.eu>
+ * @author    SolveBeam <info@solvebeam.com>
  * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
  * @package   SolveBeam\WordPress\Documentor

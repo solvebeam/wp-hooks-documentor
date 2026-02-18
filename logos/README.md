@@ -8,13 +8,13 @@ https://www.svgrepo.com/svg/234324/hook-crane
 
 Name            | HTML      | Link
 --------------- | --------- | ----
-SolveBeam Orange | `#F9461C` | https://github.com/pronamic/huisstijl/blob/master/info.txt
+SolveBeam Orange | `#F9461C` | https://github.com/solvebeam/huisstijl/blob/master/info.txt
 WordPress Blue  | `#0073AA` | https://make.wordpress.org/design/handbook/design-guide/foundations/colors/
 
 ## SVG Optimizer
 
 ```
-svgo pronamic-wp-documentor.svg -o pronamic-wp-documentor.svgo-min.svg
+svgo solvebeam-wp-documentor.svg -o solvebeam-wp-documentor.svgo-min.svg
 ```
 
 ## Inspiration

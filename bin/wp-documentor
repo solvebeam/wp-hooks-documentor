@@ -135,7 +135,7 @@ $application->register( 'parse' )
 		/**
 		 * Prefixes.
 		 *
-		 * @link https://github.com/pronamic/wp-documentor/pull/10
+		 * @link https://github.com/solvebeam/wp-hooks-documentor/pull/10
 		 */
 		$documentor->prefixes = (array) $input->getOption( 'prefix' );
 

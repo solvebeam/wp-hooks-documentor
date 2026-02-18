@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://github.com/pronamic/wp-documentor">
-		<img src="logos/pronamic-wp-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
+	<a href="https://github.com/solvebeam/wp-hooks-documentor">
+		<img src="logos/solvebeam-wp-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
 	</a>
 </p>
 
@@ -10,10 +10,10 @@
 	SolveBeam WordPress Hooks Documentor is a tool to automatically extract data about the <strong>actions</strong> and <strong>filters</strong> of your WordPress theme or plugin.	
 </p>
 
-[![Latest Stable Version](https://poser.pugx.org/pronamic/wp-documentor/v)](//packagist.org/packages/pronamic/wp-documentor)
-[![Total Downloads](https://poser.pugx.org/pronamic/wp-documentor/downloads)](//packagist.org/packages/pronamic/wp-documentor)
-[![Latest Unstable Version](https://poser.pugx.org/pronamic/wp-documentor/v/unstable)](//packagist.org/packages/pronamic/wp-documentor)
-[![License](https://poser.pugx.org/pronamic/wp-documentor/license)](//packagist.org/packages/pronamic/wp-documentor)
+[![Latest Stable Version](https://poser.pugx.org/solvebeam/wp-hooks-documentor/v)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
+[![Total Downloads](https://poser.pugx.org/solvebeam/wp-hooks-documentor/downloads)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
+[![Latest Unstable Version](https://poser.pugx.org/solvebeam/wp-hooks-documentor/v/unstable)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
+[![License](https://poser.pugx.org/solvebeam/wp-hooks-documentor/license)](//packagist.org/packages/solvebeam/wp-hooks-documentor)
 
 ## Table of contents
 
@@ -31,7 +31,7 @@
 To start documenting your WordPress filters and actions, require SolveBeam WordPress Hooks Documentor in Composer:
 
 ```
-composer require pronamic/wp-documentor --dev
+composer require solvebeam/wp-hooks-documentor --dev
 ```
 
 ### First Run
@@ -164,10 +164,10 @@ Here is a list of alternatives that we found. However, none of these satisfied o
 - https://symfony.com/doc/current/components/finder.html
 - https://developer.wordpress.org/cli/commands/i18n/make-pot/
 - https://developer.wordpress.org/cli/commands/i18n/make-json/
-- https://github.com/pronamic/deployer/blob/master/bin/pronamic-deployer
-- https://gitlab.com/pronamic/wp-updates/-/blob/master/index.php
+- https://github.com/solvebeam/deployer/blob/master/bin/solvebeam-deployer
+- https://gitlab.com/solvebeam/wp-updates/-/blob/master/index.php
 - https://github.com/wp-pay/core/issues/45
 - https://github.com/phpDocumentor/phpDocumentor/issues/2865
 - https://github.com/themeblvd/hookster
 
-[![SolveBeam - Work with us](https://github.com/pronamic/brand-resources/blob/main/banners/pronamic-work-with-us-leaderboard-728x90%404x.png)](https://www.pronamic.eu/contact/)
+[![SolveBeam - Work with us](https://github.com/solvebeam/brand-resources/blob/main/banners/solvebeam-work-with-us-leaderboard-728x90%404x.png)](https://www.solvebeam.com/contact/)

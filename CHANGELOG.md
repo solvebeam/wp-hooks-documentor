@@ -8,21 +8,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.1] - 2023-02-22
 ### Fixed
-- A cast for a hook function call is now handled correctly. ( [#18](https://github.com/pronamic/wp-documentor/issues/18) )
+- A cast for a hook function call is now handled correctly. ( [#18](https://github.com/solvebeam/wp-hooks-documentor/issues/18) )
 
 ## [1.3.0] - 2022-07-18
 ### Fixed
-- Files can now also be excluded via the `--exclude` option. ( [#13](https://github.com/pronamic/wp-documentor/issues/13) )
+- Files can now also be excluded via the `--exclude` option. ( [#13](https://github.com/solvebeam/wp-hooks-documentor/issues/13) )
 
 ### Added
-- Added support for the `@ignore` tag. ( [#14](https://github.com/pronamic/wp-documentor/issues/14) )
+- Added support for the `@ignore` tag. ( [#14](https://github.com/solvebeam/wp-hooks-documentor/issues/14) )
 
 ## [1.2.0] - 2022-01-27
 ### Fixed
-- List of arguments is empty when `apply_filters` is returned instead of assigned to variable (props [@LuigiPulcini](https://github.com/LuigiPulcini)). ( [#11](https://github.com/pronamic/wp-documentor/issues/11) )
+- List of arguments is empty when `apply_filters` is returned instead of assigned to variable (props [@LuigiPulcini](https://github.com/LuigiPulcini)). ( [#11](https://github.com/solvebeam/wp-hooks-documentor/issues/11) )
 
 ### Added
-- Added `--prefix` option (props [@LuigiPulcini](https://github.com/LuigiPulcini)). ( [#10](https://github.com/pronamic/wp-documentor/pull/10) )
+- Added `--prefix` option (props [@LuigiPulcini](https://github.com/LuigiPulcini)). ( [#10](https://github.com/solvebeam/wp-hooks-documentor/pull/10) )
 
 ## [1.1.1] - 2021-06-10
 ### Changed
@@ -41,10 +41,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First Release.
 
-[Unreleased]: https://github.com/pronamic/wp-documentor/compare/1.3.1...HEAD
-[1.3.1]: https://github.com/pronamic/wp-documentor/compare/1.3.0...1.3.1
-[1.3.0]: https://github.com/pronamic/wp-documentor/compare/1.2.0...1.3.0
-[1.2.0]: https://github.com/pronamic/wp-documentor/compare/1.1.1...1.2.0
-[1.1.1]: https://github.com/pronamic/wp-documentor/compare/1.1.0...1.1.1
-[1.1.0]: https://github.com/pronamic/wp-documentor/compare/1.0.0...1.1.0
-[1.0.0]: https://github.com/pronamic/wp-documentor/releases/tag/1.0.0
+[Unreleased]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.3.1...HEAD
+[1.3.1]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.3.0...1.3.1
+[1.3.0]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.2.0...1.3.0
+[1.2.0]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.1.1...1.2.0
+[1.1.1]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.1.0...1.1.1
+[1.1.0]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.0.0...1.1.0
+[1.0.0]: https://github.com/solvebeam/wp-hooks-documentor/releases/tag/1.0.0

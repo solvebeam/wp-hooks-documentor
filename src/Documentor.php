@@ -2,7 +2,7 @@
 /**
  * Documentor
  *
- * @author    SolveBeam <info@pronamic.eu>
+ * @author    SolveBeam <info@solvebeam.com>
  * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
  * @package   SolveBeam\WordPress\Documentor
@@ -155,7 +155,7 @@ class Documentor {
 		 * $some_variable = apply_filters( 'my_plugin_filter_1', $first_param, $second_param );
 		 * ```
 		 *
-		 * @link https://github.com/pronamic/wp-documentor/issues/11
+		 * @link https://github.com/solvebeam/wp-hooks-documentor/issues/11
 		 */
 		if ( $parent instanceof \PhpParser\Node\Expr\Assign ) {
 			return $this->get_statement_doc_comment( $parent );
@@ -168,7 +168,7 @@ class Documentor {
 		 * $should_do = (bool) apply_filters( 'should_we_do_it', true, $some_value );
 		 * ```
 		 *
-		 * @link https://github.com/pronamic/wp-documentor/issues/18
+		 * @link https://github.com/solvebeam/wp-hooks-documentor/issues/18
 		 */
 		if ( $parent instanceof \PhpParser\Node\Expr\Cast ) {
 			return $this->get_statement_doc_comment( $parent );

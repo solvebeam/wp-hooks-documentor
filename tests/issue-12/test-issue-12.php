@@ -2,7 +2,7 @@
 /**
  * Test for issue 12.
  *
- * @author    SolveBeam <info@pronamic.eu>
+ * @author    SolveBeam <info@solvebeam.com>
  * @copyright 2005-2022 SolveBeam
  * @license   GPL-3.0-or-later
  * @package   SolveBeam\WordPress\Documentor
