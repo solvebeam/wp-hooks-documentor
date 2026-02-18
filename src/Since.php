@@ -48,7 +48,7 @@ class Since {
 	 * @param string|null      $description Description.
 	 * @param PhpDocSince|null $tag         Tag.
 	 */
-	public function __construct( $version, $description = null, $tag = null ) {
+	public function __construct( $version, ?string $description = null, ?PhpDocSince $tag = null ) {
 		$this->version     = $version;
 		$this->description = $description;
 		$this->tag         = $tag;

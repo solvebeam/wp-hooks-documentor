@@ -130,7 +130,7 @@ class Hook {
 	 *
 	 * @param \PhpParser\Comment\Doc|null $doc_comment Doc comment.
 	 */
-	public function set_doc_comment( \PhpParser\Comment\Doc $doc_comment = null ) {
+	public function set_doc_comment( ?\PhpParser\Comment\Doc $doc_comment = null ) {
 		$this->doc_comment = $doc_comment;
 	}
 
@@ -286,7 +286,7 @@ class Hook {
 	 *
 	 * @param Changelog|null $changelog Changelog.
 	 */
-	public function set_changelog( Changelog $changelog = null ) {
+	public function set_changelog( ?Changelog $changelog = null ) {
 		$this->changelog = $changelog;
 	}
 

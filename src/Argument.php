@@ -80,7 +80,7 @@ class Argument {
 	 *
 	 * @param Param|null $param_tag Param tag.
 	 */
-	public function set_param_tag( Param $param_tag = null ) {
+	public function set_param_tag( ?Param $param_tag = null ) {
 		$this->param_tag = $param_tag;
 	}
 
