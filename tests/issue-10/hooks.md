@@ -17,8 +17,6 @@
 
 Argument | Type | Description
 -------- | ---- | -----------
-
-Deprecated: Non-canonical cast (double) is deprecated, use the (float) cast instead in /Users/remco/Projects/wp-hooks-documentor/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 226
 `$first_param` | `string` | This is the first argument
 `$second_param` | `string` | This is the second argument
 

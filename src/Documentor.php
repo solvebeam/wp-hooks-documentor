@@ -199,7 +199,7 @@ class Documentor {
 	public function parse( $file ) {
 		$parser_factory = new ParserFactory();
 
-		$parser = $parser_factory->create( ParserFactory::PREFER_PHP7 );
+		$parser = $parser_factory->createForNewestSupportedVersion();
 
 		$node_finder = new NodeFinder();
 

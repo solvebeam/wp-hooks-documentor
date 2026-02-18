@@ -24,10 +24,10 @@ class TagPrinter {
 	 * Print PHP Parser epxression.
 	 *
 	 * @throws \Exception Throws exception when epxression can not be transformed to string.
-	 * @param Expr $expr PHP Parser epxression.
+	 * @param Expr|mixed $expr PHP Parser epxression or string part.
 	 * @return string
 	 */
-	public function print( Expr $expr ) {
+	public function print( $expr ) {
 		/**
 		 * String.
 		 *
@@ -81,6 +81,30 @@ class TagPrinter {
 		}
 
 		/**
+		 * Interpolated String (PHP-Parser 5.x).
+		 *
+		 * @link https://github.com/nikic/PHP-Parser/blob/v5.0.0/lib/PhpParser/Node/Scalar/InterpolatedString.php
+		 */
+		if ( $expr instanceof \PhpParser\Node\Scalar\InterpolatedString ) {
+			return implode(
+				'',
+				\array_map(
+					__METHOD__,
+					$expr->parts
+				)
+			);
+		}
+
+		/**
+		 * Interpolated String Part (PHP-Parser 5.x).
+		 *
+		 * @link https://github.com/nikic/PHP-Parser/blob/v5.0.0/lib/PhpParser/Node/InterpolatedStringPart.php
+		 */
+		if ( $expr instanceof \PhpParser\Node\InterpolatedStringPart ) {
+			return $expr->value;
+		}
+
+		/**
 		 * Function Call.
 		 *
 		 * For example: `get_current_screen()`.
@@ -102,8 +126,10 @@ class TagPrinter {
 		 * @todo What todo with method call arguments?
 		 * @link https://github.com/nikic/PHP-Parser/blob/v4.10.4/lib/PhpParser/Node/Expr/MethodCall.php
 		 */
-		if ( $expr instanceof \PhpParser\Node\Expr\MethodCall ) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedIf
-			// Currently not supported.
+		if ( $expr instanceof \PhpParser\Node\Expr\MethodCall ) {
+			if ( $expr->var instanceof \PhpParser\Node\Expr\Variable ) {
+				return '{$' . $expr->var->name . '->' . $expr->name . '()}';
+			}
 		}
 
 		/**

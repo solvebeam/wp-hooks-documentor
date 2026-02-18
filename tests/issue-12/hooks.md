@@ -13,8 +13,6 @@
 
 Argument | Type | Description
 -------- | ---- | -----------
-
-Deprecated: Non-canonical cast (double) is deprecated, use the (float) cast instead in /Users/remco/Projects/wp-hooks-documentor/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 226
 `'test'` |  | 
 
 Source: [tests/issue-12/test-issue-12.php](test-issue-12.php), [line 11](test-issue-12.php#L11-L14)

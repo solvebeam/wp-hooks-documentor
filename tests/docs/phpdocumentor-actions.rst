@@ -16,9 +16,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 +----------+------+-------------+
 | Argument | Type | Description |
 +==========+======+=============+
-| 
-Deprecated: Non-canonical cast (double) is deprecated, use the (float) cast instead in /Users/remco/Projects/wp-hooks-documentor/vendor/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php on line 226
-$option | string | Name of the option to update. |
+| $option | string | Name of the option to update. |
 | $old_value | mixed | The old option value. |
 | $value | mixed | The new option value. |
 +----------+------+-------------+
