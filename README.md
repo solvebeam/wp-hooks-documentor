@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://github.com/solvebeam/wp-hooks-documentor">
-		<img src="logos/solvebeam-wp-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
+		<img src="logos/solvebeam-wp-hooks-documentor.svgo-min.svg" alt="SolveBeam WordPress Hooks Documentor" width="128" height="128">
 	</a>
 </p>
 
@@ -39,7 +39,7 @@ composer require solvebeam/wp-hooks-documentor --dev
 To let SolveBeam WordPress Hooks Documentor analyse your codebase, you have to use the `parse` command and point it to the right directory:
 
 ```
-vendor/bin/wp-documentor parse src
+vendor/bin/wphd parse src
 ```
 
 ## Command Line Usage

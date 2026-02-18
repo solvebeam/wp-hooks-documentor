@@ -30,7 +30,7 @@
 		}
 	},
 	"bin": [
-		"bin/wp-documentor"
+		"bin/wphd"
 	],
 	"config": {
 		"allow-plugins": {
