@@ -62,14 +62,11 @@ class HooksterPrinter implements JsonSerializable {
 	 * @return array
 	 */
 	public function get_hooks() {
-		switch ( $this->type ) {
-			case 'actions':
-				return $this->documentor->get_actions();
-			case 'filters':
-				return $this->documentor->get_filters();
-			default:
-				return array();
-		}
+		return match ($this->type) {
+            'actions' => $this->documentor->get_actions(),
+            'filters' => $this->documentor->get_filters(),
+            default => [],
+        };
 	}
 
 	/**
@@ -79,29 +76,29 @@ class HooksterPrinter implements JsonSerializable {
 	 */
 	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
-		$data = array();
+		$data = [];
 
 		$hooks = $this->get_hooks();
 
 		foreach ( $hooks as $hook ) {
-			$params = array();
+			$params = [];
 
 			foreach ( $hook->get_arguments() as $argument ) {
-				$params[] = (object) array(
+				$params[] = (object) [
 					'name'        => $argument->get_name(),
 					'type'        => $argument->get_type(),
 					'description' => $argument->get_description(),
-				);
+				];
 			}
 
-			$item = (object) array(
+			$item = (object) [
 				'name'    => $hook->get_tag()->get_name(),
 				'summary' => $hook->get_summary(),
 				'desc'    => $hook->get_description(),
 				'since'   => $hook->get_since_version(),
 				'params'  => $params,
 				'file'    => $hook->get_file()->getPathname(),
-			);
+			];
 
 			$data[] = $item;
 		}

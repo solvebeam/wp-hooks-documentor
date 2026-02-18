@@ -63,7 +63,7 @@ class Argument {
 	public function get_name() {
 		$pretty_printer = new \PhpParser\PrettyPrinter\Standard();
 
-		return $pretty_printer->prettyPrint( array( $this->arg ) );
+		return $pretty_printer->prettyPrint( [ $this->arg ] );
 	}
 
 	/**

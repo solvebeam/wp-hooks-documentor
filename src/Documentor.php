@@ -57,8 +57,8 @@ class Documentor {
 	 * Construct documentor.
 	 */
 	public function __construct() {
-		$this->hooks    = array();
-		$this->prefixes = array();
+		$this->hooks    = [];
+		$this->prefixes = [];
 	}
 
 	/**
@@ -78,9 +78,7 @@ class Documentor {
 	public function get_actions() {
 		return \array_filter(
 			$this->hooks,
-			function( $hook ) {
-				return $hook->is_action();
-			}
+			fn($hook) => $hook->is_action()
 		);
 	}
 
@@ -92,9 +90,7 @@ class Documentor {
 	public function get_filters() {
 		return \array_filter(
 			$this->hooks,
-			function( $hook ) {
-				return $hook->is_filter();
-			}
+			fn($hook) => $hook->is_filter()
 		);
 	}
 
@@ -243,14 +239,14 @@ class Documentor {
 
 				return \in_array(
 					\strval( $node->name ),
-					array(
+					[
 						'apply_filters',
 						'apply_filters_ref_array',
 						'apply_filters_deprecated',
 						'do_action',
 						'do_action_ref_array',
 						'do_action_deprecated',
-					),
+					],
 					true
 				);
 			}
@@ -300,7 +296,7 @@ class Documentor {
 
 			$tag = new Tag( $tag_name, $tag_arg );
 
-			$arguments = array();
+			$arguments = [];
 
 			foreach ( $statement->args as $arg ) {
 				$argument = new Argument( $arg );

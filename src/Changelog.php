@@ -34,7 +34,7 @@ class Changelog implements IteratorAggregate, Countable {
 	 * Construct changelog.
 	 */
 	public function __construct() {
-		$this->items = array();
+		$this->items = [];
 	}
 
 	/**

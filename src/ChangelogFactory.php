@@ -39,9 +39,7 @@ class ChangelogFactory {
 		 */
 		$tags = \array_filter(
 			$tags,
-			function( $tag ) {
-				return $tag instanceof PhpDocSince;
-			}
+			fn($tag) => $tag instanceof PhpDocSince
 		);
 
 		/**
@@ -49,9 +47,7 @@ class ChangelogFactory {
 		 */
 		\usort(
 			$tags,
-			function( $tag_a, $tag_b ) {
-				return -\version_compare( $tag_a->getVersion(), $tag_b->getVersion() );
-			}
+			fn($tag_a, $tag_b) => -\version_compare( $tag_a->getVersion(), $tag_b->getVersion() )
 		);
 
 		/**

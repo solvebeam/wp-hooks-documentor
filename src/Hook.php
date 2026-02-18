@@ -82,7 +82,7 @@ class Hook {
 	 * @param Tag                           $tag       Tag.
 	 * @param Argument[]                    $arguments Arguments.
 	 */
-	public function __construct( $file, $call, $tag, $arguments = array() ) {
+	public function __construct( $file, $call, $tag, $arguments = [] ) {
 		$this->file      = $file;
 		$this->call      = $call;
 		$this->tag       = $tag;
@@ -209,11 +209,11 @@ class Hook {
 	public function is_filter() {
 		return \in_array(
 			\strval( $this->call->name ),
-			array(
+			[
 				'apply_filters',
 				'apply_filters_ref_array',
 				'apply_filters_deprecated',
-			),
+			],
 			true
 		);
 	}
@@ -226,11 +226,11 @@ class Hook {
 	public function is_action() {
 		return \in_array(
 			\strval( $this->call->name ),
-			array(
+			[
 				'do_action',
 				'do_action_ref_array',
 				'do_action_deprecated',
-			),
+			],
 			true
 		);
 	}
@@ -243,10 +243,10 @@ class Hook {
 	public function is_deprecated() {
 		return \in_array(
 			\strval( $this->call->name ),
-			array(
+			[
 				'do_action_deprecated',
 				'apply_filters_deprecated',
-			),
+			],
 			true
 		);
 	}

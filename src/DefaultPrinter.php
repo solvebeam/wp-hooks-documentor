@@ -34,14 +34,14 @@ class DefaultPrinter {
 
 		$this->table = new Table( $output );
 
-		$this->table->setHeaders( array( 'File', 'Tag' ) );
+		$this->table->setHeaders( [ 'File', 'Tag' ] );
 
 		foreach ( $documentor->get_hooks() as $hook ) {
 			$this->table->addRow(
-				array(
+				[
 					$hook->get_file()->getPathname(),
 					$hook->get_tag()->get_name(),
-				)
+				]
 			);
 		}
 	}

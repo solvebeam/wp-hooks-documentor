@@ -21,7 +21,7 @@ class Test {
 		return 'test';
 	}
 
-	public function test() {
+	public function __construct() {
 		return apply_filters( 'dynamic-filter-' . $this->get_value() );
 	}
 }

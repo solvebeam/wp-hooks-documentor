@@ -127,7 +127,7 @@ class TagPrinter {
 		throw new \Exception(
 			\sprintf(
 				'Not supported hook tag expression `%s`: %s.',
-				\get_class( $expr ),
+				$expr::class,
 				$pretty_printer->prettyPrintExpr( $expr )
 			)
 		);
