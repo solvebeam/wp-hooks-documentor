@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [1.5.1] - 2026-04-07
+### Changed
+- Removed the direct `symfony/polyfill-php80` dependency, now relying on transitive dependency resolution while keeping PHP 8.2+ as the minimum supported version.
+
 ## [1.5.0] - 2026-02-27
 ### Added
 - Rector configuration and integration for automated code refactoring.
@@ -64,7 +68,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - First Release.
 
-[Unreleased]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.5.0...HEAD
+[Unreleased]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.5.1...HEAD
+[1.5.1]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.5.0...1.5.1
 [1.5.0]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.3.1...1.4.0
 [1.3.1]: https://github.com/solvebeam/wp-hooks-documentor/compare/1.3.0...1.3.1
